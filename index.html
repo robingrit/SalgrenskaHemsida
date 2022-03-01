@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="indexScript.js" defer></script>
+    <title>Slut projekt</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="img/vgr-logotyp-neg.png" alt="logo" />
+            </div>
+
+            <button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
+                Login
+            </button>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar" />
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required />
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required />
+
+                        <button id="loginBtn" type="reset">Login</button>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" />
+                            Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color: #f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">
+                            Cancel
+                        </button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <a href="index.html">Startsidan</a>
+            <a href="https://www.sahlgrenska.se/avdelningar-och-mottagningar/">Avdelingar och mottagningar</a>
+            <div class="dropdown">
+                <button>Jobb och Framtid</button>
+                <div class="dropdown-content"></div>
+            </div>
+
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <main>
+            <div class="flex-container">
+                <div class="flex-container">
+                    <div class="blocktyp1">
+                        <a href="https://www.sahlgrenska.se/avdelningar-och-mottagningar/">
+                            <img src="img/avdeling.jpg" alt="" />
+                            <div class="linkedimagecollection__text">
+                                <p>Avdelingar och mottagningar</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocktyp2">
+                        <div class="desktopstyle">
+                            <a href="https://www.sahlgrenska.se/for-dig-som-ar/patient/kontakt/">
+                                <img src="img/KontaktRådgiving.jpg" alt="" />
+                            </a>
+                            <p class="linkedimagecollection__text">Kontakt och Rådgiving</p>
+                        </div>
+                        <div class="desktopstyle">
+                            <figure>
+                                <a href="https://www.sahlgrenska.se/for-dig-som-ar/patient/">
+                                    <img src="img/Fördigsompatient.jpg" alt="" />
+                                </a>
+                                <p class="linkedimagecollection__text">paitent</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>This is the footer</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
